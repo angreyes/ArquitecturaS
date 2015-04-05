@@ -19,9 +19,9 @@ public class DespacharSolicitud implements Task {
     }
 
     @Override
-    public void EstadoSolicitud(int solicitud) { // despachar soliictud
+    public void estadoSolicitud(int solicitud) { // despachar soliictud
         if (solicitud >=1000)
-            System.out.println("La solicitud N°" + solicitud + " fue aprobada, Felicitaciones!");
+            System.out.println("La solicitud N° " + solicitud + " fue aprobada, Felicitaciones!");
     }
     
     @Override

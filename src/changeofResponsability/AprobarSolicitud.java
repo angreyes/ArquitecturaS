@@ -19,15 +19,14 @@ public class AprobarSolicitud implements Task{
     }
 
     @Override
-    public void EstadoSolicitud(int solicitud) {
+    public void estadoSolicitud(int solicitud) {
         if (solicitud > 100 && solicitud<1000)
             System.out.println("La solicitud N°" + solicitud + " no fue aprobada");
         else{
-            this.next.EstadoSolicitud(solicitud);            
             System.out.println("La solicitud N° "+ solicitud +" ha sido aprobada");
+            this.next.estadoSolicitud(solicitud);    
         }
-    }
-        
+    }        
     @Override
     public void setnext(Task tarea) {
         this.next = tarea;

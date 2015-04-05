@@ -19,12 +19,12 @@ public class RegistrarSolicitud implements Task{
     }
 
     @Override
-    public void EstadoSolicitud(int solicitud) {
+    public void estadoSolicitud(int solicitud) {
         if (solicitud<=100)
             System.out.println("La solicitud N° "+ solicitud +" no pudo ser registrada");
         else{
             System.out.println("La solicitud N° "+ solicitud +" ha sido registrada");
-            this.next.EstadoSolicitud(solicitud);
+            this.next.estadoSolicitud(solicitud);
         }
     }
         

@@ -7,12 +7,11 @@ package factory;
 
 /**
  *
- * @author BigDataSolutions
+ * @author angie
  */
-public class concreteProducts implements product{
-
-    public void imprimir() {
-        System.out.print("Soy el producto 2"); //To change body of generated methods, choose Tools | Templates.
-    }
+public class ConcreteProducts implements Productable{
     
+    public void imprimir(){
+        System.out.println("Soy el producto número 2");
+    }
 }

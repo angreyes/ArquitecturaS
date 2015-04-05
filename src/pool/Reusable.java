@@ -9,12 +9,11 @@ package pool;
  *
  * @author angie
  */
-public class reusable {
+public class Reusable {
     //Obtenemos el Reusable del pool
-    reusable reusable = reusablePool.getInstance().acquiereReusable();
- 
+    Reusable reusable = ReusablePool.getInstance().acquiereReusable(); 
     //Se libera
-    reusable reusable1 = reusablePool.getInstance().releaseReusable(reusable);
+    Reusable reusable1 = ReusablePool.getInstance().releaseReusable(reusable);
     
     
 }

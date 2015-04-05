@@ -9,30 +9,32 @@ package changeofResponsability;
  *
  * @author angie
  */
-public class client{
+public class Client{
     
     // si la solicitud es < 100 no se registra la solicitud 
     // si es > 100 pero < 1000 no se aprueba
     // si es > 1000 se despacha
     
-    private Task t1;
+    private Task tarea1;
+    private Task tarea2;
+    private Task tarea3;
     
-    public client (){
-        this.t1 = new RegistrarSolicitud();
-        Task t2 = new AprobarSolicitud ();
-        Task t3 = new DespacharSolicitud();
+    public Client (){
+        this.tarea1 = new RegistrarSolicitud();
+        this.tarea2 = new AprobarSolicitud ();
+        this.tarea3 = new DespacharSolicitud();
         
-        t1.setnext(t2);
-        t2.setnext(t3);
+        tarea1.setnext(tarea2);
+        tarea2.setnext(tarea3);
     }
     
     public static void main (String Args []){    
                
-        client c1 = new client(); 
-        c1.t1.EstadoSolicitud(100);
+        Client c1 = new Client(); 
+        c1.tarea1.estadoSolicitud(100);
         System.out.println(" ");
-        c1.t1.EstadoSolicitud(900);
+        c1.tarea1.estadoSolicitud(900);
         System.out.println(" ");
-        c1.t1.EstadoSolicitud(10000);
+        c1.tarea1.estadoSolicitud(14000);
     }
 }

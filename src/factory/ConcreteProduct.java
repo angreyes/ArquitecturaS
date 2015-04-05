@@ -4,12 +4,14 @@
  * and open the template in the editor.
  */
 package factory;
+
 /**
  *
- * @author BigDataSolutions
+ * @author angie
  */
-public interface product {
+public class ConcreteProduct implements Productable{
     
-    
-    public void imprimir ();
+    public void imprimir(){
+        System.out.println("Soy el producto número 1");
+    }
 }

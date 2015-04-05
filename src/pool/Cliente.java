@@ -3,14 +3,17 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package changeofResponsability;
+package pool;
 
 /**
  *
  * @author angie
  */
-public interface Task {
-    public void setnext (Task tarea); // variaable que va de paso a paso
-    public Task getnext ();
-    public void estadoSolicitud (int solicitud);
+public class Cliente {
+    
+    public static void main (String Args []){
+      Reusable r1;
+      r1 = new Reusable();  
+  }
+    
 }

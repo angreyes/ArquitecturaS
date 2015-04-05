@@ -10,23 +10,24 @@ package pool;
  *
  * @author angie
  */
-public class reusablePool {
+public class ReusablePool {
     
-     private static reusablePool instance = new reusablePool(); // intanciar 
+    private static ReusablePool instance = new ReusablePool(); // intanciar 
      
-    private reusablePool(){ // constructor 
+    private ReusablePool(){ // constructor 
         System.out.println("Iniciando pool");
-    }    
-    public static reusablePool getInstance(){ //al retornar la isntancia retorna el objeto RP
+    } 
+    
+    public static ReusablePool getInstance(){ //al retornar la isntancia retorna el objeto RP
         return instance;
     }
     
-    public  reusable acquiereReusable(){ 
-        reusable r = null;
+    public  Reusable acquiereReusable(){ 
+        Reusable r = null;
         return r;
     }
     
-     public  reusable releaseReusable(reusable r){ 
+     public  Reusable releaseReusable(Reusable r){ 
         return r;
     }
 
